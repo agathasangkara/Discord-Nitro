@@ -19,7 +19,6 @@ class Discord:
 			try:
 				return self.api.post("https://api.discord.gx.games/v1/direct-fulfillment", json=data, headers=headers)
 			except Exception as e:
-				print(e)
 				continue
 	
 	def auto_claim(self):
